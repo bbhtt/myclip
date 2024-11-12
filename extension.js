@@ -1130,11 +1130,15 @@ class PanelIndicator extends PanelMenu.Button {
                     if (message.status_code !== Soup.Status.CREATED) {
                         throw new Error(message.reason_phrase);
                     }
-                    const uri = new TextDecoder().decode(
+                    let uri = new TextDecoder().decode(
                         this._soupSession
                             .send_and_read_finish(result)
                             .get_data()
                     ).trim();
+                    if (uri.endsWith('/')) {
+                        uri = uri.slice(0, -1);
+                    }
+                    uri = uri + '.txt';
                     if (this._extension._indicator && !this._privateModeMenuItem.state) {
                         this._clipboard.setText(uri);
                     }
