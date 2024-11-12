@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-    <schema id="org.gnome.shell.extensions.clipman-lite" path="/org/gnome/shell/extensions/clipman-lite/">
+    <schema id="org.gnome.shell.extensions.myclip" path="/org/gnome/shell/extensions/myclip/">
         <key name="history-size" type="i">
             <range min="1" max="500"/>
             <default>15</default>

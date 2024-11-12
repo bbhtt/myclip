@@ -1,12 +1,9 @@
 {
-    "uuid": "clipman-lite@popov895.ukr.net",
-    "name": "Clipman Lite",
-    "description": "A lightweight clipboard manager",
-    "url": "https://github.com/popov895/clipman-lite",
-    "version": 4,
+    "uuid": "myclip@bbhtt.space",
+    "name": "Myclip",
+    "description": "Clipboard manager extension",
+    "url": "https://github.com/bbhtt/myclip",
+    "version": 5,
     "shell-version": ["47"],
-    "settings-schema": "org.gnome.shell.extensions.clipman-lite",
-    "donations": {
-        "custom": "https://github.com/popov895/popov895"
-    }
+    "settings-schema": "org.gnome.shell.extensions.myclip"
 }

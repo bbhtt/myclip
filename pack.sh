@@ -1,3 +1,4 @@
 #!/bin/bash
 
-gnome-extensions pack --force --extra-source=icons --extra-source=lib --out-dir=..
+rm -f myclip@bbhtt.space.shell-extension.zip
+gnome-extensions pack --force --extra-source=icons --extra-source=lib --out-dir=.
