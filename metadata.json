@@ -3,7 +3,7 @@
     "name": "Myclip",
     "description": "Clipboard manager extension",
     "url": "https://github.com/bbhtt/myclip",
-    "version": 5,
-    "shell-version": ["47"],
+    "version": 6,
+    "shell-version": ["48"],
     "settings-schema": "org.gnome.shell.extensions.myclip"
 }
