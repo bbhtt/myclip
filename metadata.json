@@ -1,9 +1,9 @@
 {
-    "uuid": "myclip@bbhtt.in",
+    "uuid": "myclip@bbhtt.space",
     "name": "Myclip",
     "description": "Clipboard manager extension",
     "url": "https://github.com/bbhtt/myclip",
     "version": 6,
-    "shell-version": ["48"],
+    "shell-version": ["49"],
     "settings-schema": "org.gnome.shell.extensions.myclip"
 }

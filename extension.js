@@ -192,18 +192,16 @@ class HistoryMenuItem extends PopupMenu.PopupSubMenuMenuItem {
         box.add_child(toggleSubMenuButton);
         this.add_child(box);
 
-        const clickAction = new Clutter.ClickAction({
+        const clickAction = new Clutter.ClickGesture({
             enabled: this._activatable,
         });
-        clickAction.connectObject(`clicked`, () => {
-            this.activate(Clutter.get_current_event());
-        });
-        clickAction.connectObject(`notify::pressed`, () => {
-            if (clickAction.pressed) {
-                this.add_style_pseudo_class(`active`);
-            } else {
-                this.remove_style_pseudo_class(`active`);
-            }
+        clickAction.connect('recognize',
+            () => this.activate(Clutter.get_current_event()));
+        clickAction.connect('notify::pressed', () => {
+            if (clickAction.pressed)
+                this.add_style_pseudo_class('active');
+            else
+                this.remove_style_pseudo_class('active');
         });
         this.add_action(clickAction);
 
